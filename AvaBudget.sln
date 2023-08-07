@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33913.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaBudget", "AvaBudget\AvaBudget.csproj", "{29372D22-721E-4C77-AD53-F99CF8BC0205}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaBudget.Android", "AvaBudget.Android\AvaBudget.Android.csproj", "{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaBudget.Desktop", "AvaBudget.Desktop\AvaBudget.Desktop.csproj", "{6791F90A-42D9-45EE-8334-B57FB226D98B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaBudget.iOS", "AvaBudget.iOS\AvaBudget.iOS.csproj", "{63EEFD72-8052-4681-A850-CF5F489972BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaBudget.Browser", "AvaBudget.Browser\AvaBudget.Browser.csproj", "{E59BBEDF-ED9A-4C7F-803C-388F758E3894}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29372D22-721E-4C77-AD53-F99CF8BC0205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29372D22-721E-4C77-AD53-F99CF8BC0205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29372D22-721E-4C77-AD53-F99CF8BC0205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29372D22-721E-4C77-AD53-F99CF8BC0205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85F95E0-C2DB-4953-9BC1-D88B681D94DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6791F90A-42D9-45EE-8334-B57FB226D98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6791F90A-42D9-45EE-8334-B57FB226D98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6791F90A-42D9-45EE-8334-B57FB226D98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6791F90A-42D9-45EE-8334-B57FB226D98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EEFD72-8052-4681-A850-CF5F489972BF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E59BBEDF-ED9A-4C7F-803C-388F758E3894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59BBEDF-ED9A-4C7F-803C-388F758E3894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59BBEDF-ED9A-4C7F-803C-388F758E3894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59BBEDF-ED9A-4C7F-803C-388F758E3894}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D2DF6D7-90E3-415C-A403-EB11F364216F}
+	EndGlobalSection
+EndGlobal

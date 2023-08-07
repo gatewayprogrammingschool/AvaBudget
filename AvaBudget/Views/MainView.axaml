@@ -1,0 +1,59 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:AvaBudget.ViewModels"
+             xmlns:m="clr-namespace:AvaBudget.Models"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:pgc="clr-namespace:Avalonia.PropertyGrid.Controls;assembly=Avalonia.PropertyGrid"
+             x:Class="AvaBudget.Views.MainView"
+             x:DataType="vm:MainViewModel"
+             Name="Main">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+  <DockPanel>
+    <!--<Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>-->
+    <DockPanel Grid.Column="0" VerticalAlignment="Top" Margin="8" MaxWidth="400">
+          <pgc:PropertyGrid SelectedObject="{Binding Calendar}"/>
+    </DockPanel>
+    <ScrollViewer Grid.Column="1" HorizontalAlignment="Stretch">
+      <ItemsControl ItemsSource="{Binding Calendar.CalendarMonths}">
+        <ItemsControl.ItemTemplate>
+          <DataTemplate x:DataType="m:CalendarMonth">
+            <Expander Header="{Binding Label}" IsExpanded="{Binding IsWorkingMonth}" HorizontalAlignment="Stretch">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Calendar Grid.Column="0" Name="calendar"
+                  SelectionMode="SingleDate"
+                  SelectedDate="{Binding WorkingDate}"
+                  DisplayDateStart="{Binding FirstDay.CalendarDate}"
+                  DisplayDateEnd="{Binding LastDay.CalendarDate}" />
+                <DataGrid Grid.Column="1" Background="DarkGreen"
+                          Name="MyDataGrid" ItemsSource="{Binding WorkingBudgetItems}"
+                          AutoGenerateColumns="False">
+                  <DataGrid.Columns>
+                    <!--<DataGridTextColumn Header="Date" Binding="{Binding DateDue.CalendarDate}"/>-->
+                    <DataGridTextColumn Header="Item" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Paid By" Binding="{Binding PaidBy.Name}"/>
+                    <DataGridTextColumn Header="Paid To" Binding="{Binding PayTo.Name}"/>
+                    <DataGridTextColumn Header="Amount" Binding="{Binding DisplayAmount}"/>
+                  </DataGrid.Columns>
+
+                </DataGrid>
+              </Grid>
+            </Expander>
+          </DataTemplate>
+        </ItemsControl.ItemTemplate>
+      </ItemsControl>
+    </ScrollViewer>
+  </DockPanel>
+</UserControl>
